@@ -1,18 +1,25 @@
- * {
+         * {
             box-sizing: border-box;
         } 
         body {
             font-family: Arial, Helvetica, sans-serif;
             background-color:#d5d6f0;
+            text-align: center;
 
         }
         /* Estilo del encabezado */
         header {
             background-color: #787dd5;
-            padding: 20px;
+            padding: 10px;
             text-align: center;
             font-size: 35px;
             color: white;
+            height: 340px;
+
+        }
+
+        .circulo, th{
+          border-radius: 50%;
         }
         /* Crear dos columnas que flotan una al lado de la otra */
         nav {
