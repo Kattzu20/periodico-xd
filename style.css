@@ -1,0 +1,59 @@
+ * {
+            box-sizing: border-box;
+        } 
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        /* Estilo del encabezado */
+        header {
+            background-color: #787dd5;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+        /* Crear dos columnas que flotan una al lado de la otra */
+        nav {
+            float: left;
+            width: 70%;
+            background: #d5d6f0;
+            padding: 20px;
+            height: 230px;
+        }
+        /* Estilo de la lista dentro del menú */
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        article {
+            float: left;
+            padding: 20px;
+            width: 30%;
+            background-color: #cccdf3;
+        }
+
+        /* Limpiar floats después de las columnas */
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Estilo del pie de página */
+        footer {
+            background-color: #353556;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Layout responsive - hace que las dos columnas se apilen en pantallas pequeñas */
+        @media (max-width: 600px) {
+            nav, article {
+                width: 100%;
+                height: auto;
+            }
+        }
